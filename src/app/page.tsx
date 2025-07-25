@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/home/hero-section";
+import BgGradient from "@/components/common/bg-gradient";
 export default function Home() {
   return (
-    <div className="">
-     <h1>Hello, How are you?</h1>
-     <Button variant="outline" size={'lg'}>click me</Button>
+    <div className="relative w-full">
+      <BgGradient />
+      <div className="flex flex-col">
+     <HeroSection/>
+     </div>
     </div>
   );
 }
