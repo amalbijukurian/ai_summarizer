@@ -40,11 +40,7 @@
   --radius-sm: calc(var(--radius) - 4px);
 }
 
-@layer utilities {
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-}
+
 
 @layer base {
   :root {

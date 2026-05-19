@@ -13,7 +13,7 @@ export default function HeroSection() {
                 </Badge> 
                 </div>
             </div>
-            <h1 className="font-bold py-6 text-center text-6xl">Transform PDFs into conscise Summaries</h1>
+            <h1 className="font-bold py-6 text-center text-6xl">Transform PDFs into concise Summaries</h1>
             <h2 className="text-lg sm:text-xl lg:text-2l text-center px-4 lg:px-0 lg:max-w-4xl text-gray-600">Get a beautiful summary reel of document in seconds</h2>
 
             <Button variant={'link'} className="text-white mt-6 text-base sm:text-lg lg:text-xl
