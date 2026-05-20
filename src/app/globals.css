@@ -3,13 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom dark mode variant (if needed by your setup) */
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans:
+    var(--font-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -40,7 +40,11 @@
   --radius-sm: calc(var(--radius) - 4px);
 }
 
-
+@layer utilities {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
 
 @layer base {
   :root {
@@ -146,19 +150,18 @@
   }
 }
 
-@keyframes gradient-x{
+@keyframes gradient-x {
   0%,
   100% {
     background-size: 200% 100%;
     background-position: left center;
   }
-  50%{
-    background-size:200% 100%;
+  50% {
+    background-size: 200% 100%;
     background-position: right center;
-
   }
 }
 
-.animate-gradient-x{
+.animate-gradient-x {
   animation: gradient-x 3s ease infinite;
 }
